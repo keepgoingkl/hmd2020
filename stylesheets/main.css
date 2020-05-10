@@ -1,0 +1,61 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: url('../bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.page-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+}
+
+.page-1 h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3em;
+    color: #e7fcef;
+    background: rgba(0, 0, 0, 0.452);
+    margin-top: 16rem;
+    animation: drop 1.5s ease;
+}
+
+.page-1 h2 {
+    transition-delay: 1.5s;
+    opacity: 1;
+    animation-delay: 2s;
+    animation: delayshow 3s ease;
+    margin-top: 2rem;
+    font-size: 2em;
+    background: rgba(0, 0, 0, 0.452);
+    color: #e7fcef;
+    font-family: 'Dancing Script', cursive;
+    padding: 0 0.5rem;
+}
+
+@keyframes drop {
+    from {
+        margin-top: 0;
+    }
+
+    to {
+        margin-top: 16rem;
+    }
+}
+
+@keyframes delayshow {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
